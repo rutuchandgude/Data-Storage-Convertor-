@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Data Storage Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Storage Convertor</h1>
+        <div class="box">
+        <div id="upper-box">
+          <p>Convert from:</p>
+          <select name="data" class="inputType">
+             <option value="Kilobytes">kilobytes[KB]</option>
+             <option value="Megabytes">Megabytes[MB]</option>
+             <option value="Gigabytes">Gigabytes[GB]</option>
+             <option value="Terabytes">Terabytes[TB]</option>
+          </select>
+        </div>
+        <div id="lower-box">
+            <p>Convert to:</p>
+            <select name="data" class="resultType">
+                <option value="Kilobytes">kilobytes[KB]</option>
+                <option value="Megabytes">Megabytes[MB]</option>
+                <option value="Gigabytes">Gigabytes[GB]</option>
+                <option value="Terabytes">Terabytes[TB]</option>
+            </select>
+        </div>
+        <div>
+            <p>Value:</p>
+            <input id="input" placeholder="Input" type="number" name="" id="num">
+        </div>
+        
+        <div>
+        <button id="btn">Convert</button>
+        <h2 id="opmsg"></h2>
+        <p>Output:</p>
+        <textarea id="output"></textarea>
+        </div>
+   </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
